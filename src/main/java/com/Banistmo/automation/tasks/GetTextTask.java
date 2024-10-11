@@ -17,7 +17,7 @@ public class GetTextTask implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        // Obtiene el texto del elemento RESPUESTA
+        // Obtiene el texto LA RESPUESTA
         String respuestaText = Text.of(RESPUESTA).answeredBy(actor);
         System.out.println("El valor del resultado es: " + respuestaText);
     }
