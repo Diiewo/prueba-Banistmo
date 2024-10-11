@@ -9,7 +9,7 @@ import net.serenitybdd.screenplay.actors.OnStage;
 public class DriverHook {
     @BeforeAll
     public static void setup() {
-        OnStage.setTheStage(Cast.whereEveryoneCan(BrowseTheWeb.with(WebDriverFactory.goToWeb("https://www.banistmo.com/wps/portal/banistmo/personas"))));
+        OnStage.setTheStage(Cast.whereEveryoneCan(BrowseTheWeb.with(WebDriverFactory.goToWeb("https://www.bancolombia.com/personas?_gl=1*kdwle1*_gcl_au*MTM0OTY0NzYwMC4xNzI4NjcyMDE4*_ga*Nzc3NjczNDcuMTcyODY3MjAxOQ..*_ga_GVYK05G3HJ*MTcyODY3MjAxOC4xLjEuMTcyODY3MjIxOC42MC4wLjA."))));
         OnStage.theActorCalled("Automation");
     }
 }

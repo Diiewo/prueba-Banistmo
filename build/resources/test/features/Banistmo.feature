@@ -1,10 +1,14 @@
 Feature: Banistmo websites
 
 Scenario: Accessing the Banistmo websites
-     Given Select button cookies
-     When Search the aprender
-     When Search the legales
-     When Search the fatca y crs
-     When Download “PJ-Autocertificación unificado- Fatca y CRS.pdf”
-     Then Validar pdf
+     Given Select button negocios
+     When Select button soluciones no financieras
+     When Search the herramientas
+     When Search the gestionar
+     When Search the convertidor
+     When Search the calcular
+     When Write the tasa
+     When Select Semestral
+     When Select Anual
+     Then validate respuesta
 

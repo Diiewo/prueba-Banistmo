@@ -4,20 +4,20 @@ import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
-import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.SelectFromOptions;
 
 import static com.Banistmo.automation.userinterfaces.HomePageUI.*;
 
 @AllArgsConstructor
-public class ClickButtonCookiesTasks implements Task {
+public class SelectOptionTask implements Task {
 
-    public static ClickButtonCookiesTasks clickButtonCookies() {
-        return Tasks.instrumented(ClickButtonCookiesTasks.class);
+    public static SelectOptionTask selectSemestral() {
+        return Tasks.instrumented(SelectOptionTask.class);
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Click.on(CLICK_BUTTON_COOKIES).afterWaitingUntilEnabled());
+        // Selecciona la opción "Semestral"
+        actor.attemptsTo(SelectFromOptions.byVisibleText("Semestral").from(SELECT_SEMESTRAL));
     }
-
 }

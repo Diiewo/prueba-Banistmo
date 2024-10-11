@@ -7,19 +7,19 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Scroll;
 
-import static com.Banistmo.automation.userinterfaces.HomePageUI.CLICK_BUTTON_FACT;
+import static com.Banistmo.automation.userinterfaces.HomePageUI.*;
 
 @AllArgsConstructor
-public class ClickButtonFactTasks implements Task {
+public class ClickButtonConvertidorTasks implements Task {
 
-    public static ClickButtonFactTasks clickButtonFack() {
-        return Tasks.instrumented(ClickButtonFactTasks.class);
+    public static ClickButtonConvertidorTasks clickButtonConvertidor() {
+        return Tasks.instrumented(ClickButtonConvertidorTasks.class);
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Scroll.to(CLICK_BUTTON_FACT));
-        actor.attemptsTo(Click.on(CLICK_BUTTON_FACT).afterWaitingUntilEnabled());
+
+        actor.attemptsTo(Click.on(CLICK_BUTTON_CONVERTIDOR).afterWaitingUntilEnabled());
     }
 
 }

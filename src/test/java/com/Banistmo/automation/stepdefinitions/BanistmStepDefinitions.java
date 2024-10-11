@@ -1,8 +1,5 @@
 package com.Banistmo.automation.stepdefinitions;
 
-import com.Banistmo.automation.interactions.Cambio;
-import com.Banistmo.automation.interactions.Wait;
-
 import com.Banistmo.automation.tasks.*;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -15,34 +12,52 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 public class BanistmStepDefinitions {
     // Accessing the Banistmo website
 
-    @Given("Select button cookies")
+    @Given("Select button negocios")
     public void clickButton() {
-        theActorInTheSpotlight().attemptsTo(ClickButtonCookiesTasks.clickButtonCookies());
+        theActorInTheSpotlight().attemptsTo(ClickButtonNegociosTasks.clickButtonNegocios());
     }
 
-    @When("Search the aprender")
-    public void searchAprender() {
-        theActorInTheSpotlight().attemptsTo(ClickButtonAprenderTasks.clickButtonAprender());
+    @When("Select button soluciones no financieras")
+    public void clickButtonSoluciones() {
+        theActorInTheSpotlight().attemptsTo(ClickButtonSolucionesTasks.clickButtonSoluciones());
     }
-    @When("Search the legales")
-    public void searchLegales() {
-        theActorInTheSpotlight().attemptsTo(ClickButtonLegalesTasks.clickButtonLegales());
+    @When("Search the herramientas")
+    public void searchHerramientas() {
+        theActorInTheSpotlight().attemptsTo(ClickButtonHerramientasTasks.clickButtonHerramientas());
     }
-    @When("Search the fatca y crs")
-    public void searchFact() {
-        theActorInTheSpotlight().attemptsTo(ClickButtonFactTasks.clickButtonFack());
-    }
-
-    @When("Download “PJ-Autocertificación unificado- Fatca y CRS.pdf”")
-    public void downloadPdf() {
-        theActorInTheSpotlight().attemptsTo(ClickButtonDownloadTasks.clickButtonDownload());
+    @When("Search the gestionar")
+    public void searchGestionar() {
+        theActorInTheSpotlight().attemptsTo(ClickButtonGestionarTasks.clickButtonGestionar());
     }
 
-    @Then("Validar pdf")
-    public void pestanaPdf() throws InterruptedException {
-        theActorInTheSpotlight().attemptsTo(Cambio.aLaPestana(2));
-        theActorInTheSpotlight().attemptsTo(Wait.seconds(300));
-        theActorInTheSpotlight().attemptsTo(Cambio.aLaPestana(1));
+    @When("Search the convertidor")
+    public void searchConvertidor() {
+        theActorInTheSpotlight().attemptsTo(ClickButtonConvertidorTasks.clickButtonConvertidor());
+    }
+
+    @When("Search the calcular")
+    public void searchCalcular() {
+        theActorInTheSpotlight().attemptsTo(ClickButtonCalcularTasks.clickButtonCalcular());
+    }
+
+    @When("Write the tasa")
+    public void writeTasa() {
+        theActorInTheSpotlight().attemptsTo(WriteInputTasaTasks.writeInputTasa());
+    }
+
+    @When("Select Semestral")
+    public void selectSemestral() {
+        theActorInTheSpotlight().attemptsTo(SelectOptionTask.selectSemestral());
+    }
+
+    @When("Select Anual")
+    public void selectAnual() {
+        theActorInTheSpotlight().attemptsTo(SelectOptionAnualTask.selectAnual());
+    }
+
+    @Then("validate respuesta")
+    public void validateRespuesta() {
+        theActorInTheSpotlight().attemptsTo(GetTextTask.validateRespuesta());
     }
     
 }

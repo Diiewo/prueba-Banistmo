@@ -5,21 +5,19 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.actions.Scroll;
 
 import static com.Banistmo.automation.userinterfaces.HomePageUI.*;
 
 @AllArgsConstructor
-public class ClickButtonLegalesTasks implements Task {
+public class ClickButtonNegociosTasks implements Task {
 
-    public static ClickButtonLegalesTasks clickButtonLegales() {
-        return Tasks.instrumented(ClickButtonLegalesTasks.class);
+    public static ClickButtonNegociosTasks clickButtonNegocios() {
+        return Tasks.instrumented(ClickButtonNegociosTasks.class);
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Scroll.to(CLICK_BUTTON_LEGALES));
-        actor.attemptsTo(Click.on(CLICK_BUTTON_LEGALES).afterWaitingUntilEnabled());
+        actor.attemptsTo(Click.on(CLICK_BUTTON_NEGOCIOS).afterWaitingUntilEnabled());
     }
 
 }

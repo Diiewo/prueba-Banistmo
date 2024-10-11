@@ -1,26 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Banistmo websites" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-10-10T16:51:53" hostname="LAPTOP-0OBL252M" time="90.128">
+<testsuite name="Banistmo websites" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-10-11T21:32:52" hostname="LAPTOP-0OBL252M" time="19.486">
   <properties/>
-  <testcase name="Accessing the Banistmo websites" classname="Banistmo websites" time="90.128"/>
-  <system-out><![CDATA[?[92m|-- Given Select button cookies?[0m
-?[92m|---- Automation click button cookies tasks?[0m
-?[92m|------ Automation clicks on Boton de cookies?[0m
-?[92m|-- When Search the aprender?[0m
-?[92m|---- Automation click button aprender tasks?[0m
-?[92m|------ Automation clicks on Boton de Aprender?[0m
-?[92m|-- When Search the legales?[0m
-?[92m|---- Automation click button legales tasks?[0m
-?[92m|------ Automation clicks on Boton de legal?[0m
-?[92m|-- When Search the fatca y crs?[0m
-?[92m|---- Automation click button fact tasks?[0m
-?[92m|------ Automation clicks on Boton de Fatca y CRS?[0m
-?[92m|-- When Download “PJ-Autocertificación unificado- Fatca y CRS.pdf”?[0m
-?[92m|---- Automation click button download tasks?[0m
-?[92m|------ Automation clicks on Boton de descargar?[0m
-?[92m|-- Then Validar pdf?[0m
-?[92m|---- Automation cambio?[0m
-?[92m|---- Automation wait?[0m
-?[92m|---- Automation cambio?[0m
+  <testcase name="Accessing the Banistmo websites" classname="Banistmo websites" time="19.486"/>
+  <system-out><![CDATA[?[92m|-- Given Select button negocios?[0m
+?[92m|---- Automation click button negocios tasks?[0m
+?[92m|------ Automation clicks on Boton de negocios?[0m
+?[92m|-- When Select button soluciones no financieras?[0m
+?[92m|---- Automation click button soluciones tasks?[0m
+?[92m|------ Automation clicks on Boton de Soluciones no financieras?[0m
+?[92m|-- When Search the herramientas?[0m
+?[92m|---- Automation click button herramientas tasks?[0m
+?[92m|------ Automation clicks on Boton de Herramientas?[0m
+?[92m|-- When Search the gestionar?[0m
+?[92m|---- Automation click button gestionar tasks?[0m
+?[92m|------ Automation clicks on Boton de Gestionar?[0m
+?[92m|-- When Search the convertidor?[0m
+?[92m|---- Automation click button convertidor tasks?[0m
+?[92m|------ Automation clicks on Boton de Convertidor?[0m
+?[92m|-- When Search the calcular?[0m
+?[92m|---- Automation click button calcular tasks?[0m
+?[92m|------ Automation clicks on Boton de Calcular?[0m
+?[92m|-- When Write the tasa?[0m
+?[92m|---- Automation write input tasa tasks?[0m
+?[92m|------ Automation enters '20' into Grilla Tasa?[0m
+?[92m|-- When Select Semestral?[0m
+?[92m|---- Automation select option task?[0m
+?[92m|------ Automation selects Semestral on Seleccionar Semestral?[0m
+?[92m|-- When Select Anual?[0m
+?[92m|---- Automation select option anual task?[0m
+?[92m|------ Automation selects Anual on Seleccionar Anual?[0m
+?[92m|-- Then validate respuesta?[0m
+?[92m|---- Automation get text task?[0m
+El valor del resultado es: 9.54 %
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

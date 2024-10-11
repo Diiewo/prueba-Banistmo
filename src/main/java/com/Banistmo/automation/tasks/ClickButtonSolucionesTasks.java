@@ -10,16 +10,16 @@ import net.serenitybdd.screenplay.actions.Scroll;
 import static com.Banistmo.automation.userinterfaces.HomePageUI.*;
 
 @AllArgsConstructor
-public class ClickButtonAprenderTasks implements Task {
+public class ClickButtonSolucionesTasks implements Task {
 
-    public static ClickButtonAprenderTasks clickButtonAprender() {
-        return Tasks.instrumented(ClickButtonAprenderTasks.class);
+    public static ClickButtonSolucionesTasks clickButtonSoluciones() {
+        return Tasks.instrumented(ClickButtonSolucionesTasks.class);
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Scroll.to(CLICK_BUTTON_APRENDER));
-        actor.attemptsTo(Click.on(CLICK_BUTTON_APRENDER).afterWaitingUntilEnabled());
+        actor.attemptsTo(Scroll.to(CLICK_BUTTON_SOLUCIONES));
+        actor.attemptsTo(Click.on(CLICK_BUTTON_SOLUCIONES).afterWaitingUntilEnabled());
     }
 
 }
